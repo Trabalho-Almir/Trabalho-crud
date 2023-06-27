@@ -201,19 +201,11 @@ tbody tr td.acao {
   color: white;
 }
 
-.activeT {
+.active {
   display: flex;
 }
 
-.activeT .modal {
-  animation: modal .4s;
-}
-
-.activeM {
-  display: flex;
-}
-
-.activeM .modal {
+.active .modal {
   animation: modal .4s;
 }
 
