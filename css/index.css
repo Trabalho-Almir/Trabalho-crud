@@ -1,0 +1,352 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS PARA O NAVBAR DO TOPO */
+
+.container-navbar{
+    height: 30.5vh;
+    width: 100%;
+    max-width: 100%;
+}
+
+.nav-top{
+    background-color: #ff0000;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.nav-top p{
+    color: #fff;
+}
+
+.nav-top .btn-nav-top{
+    display: flex;
+    gap: 15px ;
+    position: absolute;
+    right: 0;
+    padding: 0 20px;
+}
+
+.btn-nav-top ul{
+    list-style: none;
+    color: #fff;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.btn-nav-top .btn-icon:hover{
+    opacity: 0.6;
+    color: black;
+}
+
+.btn-nav-top-icon{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding: 0 20px;
+}
+.btn-nav-top-icon i{
+    color: #fff;
+}
+
+/* FINAL DO CSS PARA O NAVBAR DO TOPO */
+
+/* CSS PARA O NAVBAR DO MEIO */
+
+.nav-middle{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.imagem{
+    position: absolute;
+    left: 20px;
+}
+
+.btn-nav-middle-icon1 ul{
+    list-style: none;
+}
+.btn-nav-middle-icon2 ul{
+    list-style: none;
+}
+
+.btn-nav-middle-icon1{
+    display: flex;
+    gap: 20px   ;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-nav-middle-icon2{
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.btn-nav-middle-icon3{
+    margin-right: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-nav-middle-icon1:hover{
+    opacity: .6;
+}
+
+.btn-nav-middle-icon2:hover{
+    opacity: .6;
+}
+
+.btn-nav-middle-icon3:hover{
+    opacity: .6;
+}
+
+.btn-nav-middle-principal{
+    position: absolute;
+    right: 7%;
+    padding: 0 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.pesquisa{
+    position: absolute;
+    right: 40%;
+}
+
+.pesquisa input{
+    width: 27rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: 2px solid #ff0000;
+    cursor: pointer;
+}
+
+.pesquisa input::-webkit-input-placeholder {
+    padding: 0 10px;
+}
+
+.pesquisa i{
+    font-size: 22px;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+/* FINAL DO CSS PARA O NAVBAR DO MEIO */
+
+
+/* CSS PARA A NAVBAR DE BAIXO */
+
+
+.nav-bottom{
+    background-color: #D1D5D1;
+    height: 50px;
+    display: flex;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.categorias-btn-bottom{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.icone-sandwiche{
+    display: flex;
+    gap: 15px ;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-sandwiche:hover{
+    opacity: .6;
+}
+
+.categorias-btn-bottom ul{
+    list-style: none;
+}
+
+.categorias-btn-bottom select{
+    height: 40px;
+}
+
+.efeito-regiao{
+    display: flex;
+    gap: 15px   ;
+    background-color: #D1D5D1;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+    border-right: 2px solid rgba(133, 133, 133, .9);
+}
+
+.efeito-regiao i{
+    color: #ff0000;
+}
+
+.btn2:hover, .btn3:hover, .btn5:hover{
+    opacity: .6;
+}
+
+.btn3 a, .btn2 ul,li,a, .btn5 ul,li,a{
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+}
+
+/* FINAL DO CSS PARA O NAVBAR DE BAIXO */
+
+/* CSS PARA A SECTION */
+
+.container-section{
+    height: 100vh;
+    width: 100%;
+    max-height: 100vh;
+}
+
+.imagem-section img{
+    width: 1349px;
+}
+
+.mais-vendidos{
+    width: 100%;
+    margin-top: 50px;
+    font-size: 30px;
+    padding: 0 30px;
+    background-color: #ff0000;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #000000;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.imagens-mais-vendidos{
+    display: flex;
+    margin-top: 50px;
+    gap: 35px   ;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 65px 0;
+    border: 2px solid rgba(255, 0, 0, 0.8);
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover{
+    transform: scale(1.1);
+    border: 2px solid #ff0000;
+}
+
+
+.img1 button, .img2 button, .img3 button, .img4 button, .img5 button, .img6 button{
+    background-color: #ff0000;
+    border-radius: 4px;
+    padding: 4px;
+    border: 1px solid;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.img1 button:hover, .img2 button:hover, .img3 button:hover, .img4 button:hover, .img5 button:hover, .img6 button:hover{
+    opacity: .8 ;
+}
+
+
+.imagens-mais-vendidos img{
+    height: 150px;
+
+}
+
+/* FINAL CSS DA SECTION */
+
+/* INICIO DO CSS PARA O FAQ */
+
+.faq-container{
+    margin-top: 150px;
+    height: 50vh;
+    width: 100%;
+    background-color: #000000;
+    border-top: 2px solid rgb(255, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 30px;
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.faq-container ul{
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.institucional{
+    display: flex;
+    flex-direction: column;
+    gap: 15px   ;
+    color: #fff;
+}
+
+.institucional h3{
+    font-weight: bold;
+    border-bottom: 2px solid #ff0000;
+}
+
+.ajuda{
+    display: flex;
+    flex-direction: column;
+    gap: 15px   ;
+    color: #fff;
+}
+
+.ajuda h3{
+    font-weight: bold;
+    border-bottom: 2px solid #ff0000;
+}
+
+.acompanhe-nos i{
+    color: white;
+    padding: 20px 10px;
+    font-size: 30px;
+}
+
+.acompanhe-nos h3{
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 2px solid #ff0000;
+}
+
+.pagamentos img{
+    padding: 10px;
+}
+
+.pagamentos h3{
+    color: #fff;
+    border-bottom: 2px solid #ff0000;
+}
