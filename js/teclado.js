@@ -1,19 +1,19 @@
 const modal = document.querySelector('.modal-container')
 const tbody = document.querySelector('tbody')
-const sNome = document.querySelector('#m-nome')
-const sEstoque = document.querySelector('#m-estoque')
-const sPreco = document.querySelector('#m-preco')
+const sNome = document.querySelector('#t-nome')
+const sEstoque = document.querySelector('#t-estoque')
+const sPreco = document.querySelector('#t-preco')
 const btnSalvar = document.querySelector('#btnSalvar')
 
 let itens
 let id
 
-function openModal(edit = false, index = 0) {
-  modal.classList.add('active')
+function openModalT(edit = false, index = 0) {
+  modal.classList.add('activeT')
 
   modal.onclick = e => {
     if (e.target.className.indexOf('modal-container') !== -1) {
-      modal.classList.remove('active')
+      modal.classList.remove('activeT')
     }
   }
 
@@ -76,7 +76,7 @@ btnSalvar.onclick = e => {
 
   setItensBD()
 
-  modal.classList.remove('active')
+  modal.classList.remove('activeT')
   loadItens()
   id = undefined
 }
@@ -94,7 +94,7 @@ function loadItens() {
 
 
 
-const getItensBD = () => JSON.parse(localStorage.getItem('dbperiferico')) ?? []
-const setItensBD = () => localStorage.setItem('dbperiferico', JSON.stringify(itens))
+const getItensBD = () => JSON.parse(localStorage.getItem('dbteclado')) ?? []
+const setItensBD = () => localStorage.setItem('dbteclado', JSON.stringify(itens))
 
 loadItens()

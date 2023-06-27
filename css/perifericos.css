@@ -11,6 +11,8 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   justify-content: center;
   background-color: rgba(0,0,0,0.1);
@@ -29,6 +31,8 @@ button {
   height: 80%;
   border-radius: 10px;
   background: white;
+
+  margin-bottom: 10px;
 }
 
 .header {
@@ -197,11 +201,19 @@ tbody tr td.acao {
   color: white;
 }
 
-.active {
+.activeT {
   display: flex;
 }
 
-.active .modal {
+.activeT .modal {
+  animation: modal .4s;
+}
+
+.activeM {
+  display: flex;
+}
+
+.activeM .modal {
   animation: modal .4s;
 }
 
