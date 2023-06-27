@@ -12,6 +12,10 @@
     max-width: 100%;
 }
 
+.navbar-nav {
+    padding-left: 520px!important;
+}
+
 .nav-top{
     background-color: #ff0000;
     display: flex;
