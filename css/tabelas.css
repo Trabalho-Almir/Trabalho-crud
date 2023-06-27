@@ -11,9 +11,23 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,0,0,0.1);
+  background-color: #000
+}
+
+.avatar{
+  width: 120px;
+  background-image: url(/images/Gama_games-removebg-preview.png);
+  padding-top: 90px;
+  background-size: contain;
+  transition: all 0.20s linear;
+  background-repeat: no-repeat;
+  width: 20%;
+  height: 0;
+  margin-top: 8px
 }
 
 .img-td{
@@ -29,6 +43,8 @@ button {
   height: 80%;
   border-radius: 10px;
   background: white;
+
+  margin-bottom: 10px;
 }
 
 .header {
