@@ -6,10 +6,6 @@
 
 /* CSS PARA O NAVBAR DO TOPO */
 
-.navbar-nav {
-    padding-left: 520px!important;
-}
-
 .container-navbar{
     height: 30.5vh;
     width: 100%;
@@ -55,7 +51,7 @@
     padding: 0 20px;
 }
 .btn-nav-top-icon i{
-    color: #fff;
+    color: #ffffff;
 }
 
 /* FINAL DO CSS PARA O NAVBAR DO TOPO */
@@ -68,12 +64,17 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
 }
 
 .imagem{
     position: absolute;
     left: 20px;
+}
+
+.imagem img{
+    height: 300px;
+    width: 300px;
 }
 
 .btn-nav-middle-icon1 ul{
@@ -160,7 +161,7 @@
     background-color: #D1D5D1;
     height: 50px;
     display: flex;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
 }
 
 .categorias-btn-bottom{
@@ -205,7 +206,7 @@
     color: #ff0000;
 }
 
-.btn2:hover, .btn3:hover, .btn5:hover{
+.btn1:hover, .btn2:hover, .btn3:hover, .btn5:hover{
     opacity: .6;
 }
 
@@ -217,80 +218,6 @@
 
 /* FINAL DO CSS PARA O NAVBAR DE BAIXO */
 
-/* CSS PARA A SECTION */
-
-.container-section{
-    height: 100vh;
-    width: 100%;
-    max-height: 100vh;
-}
-
-.imagem-section img{
-    width: 100%;
-
-}
-
-.mais-vendidos{
-    width: 100%;
-    margin-top: 50px;
-    font-size: 30px;
-    padding: 0 30px;
-    background-color: #ff0000;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    color: #000000;
-    border: 2px solid rgb(0, 0, 0);
-}
-
-.imagens-mais-vendidos{
-    display: flex;
-    margin-top: 50px;
-    gap: 35px   ;
-    justify-content: center;
-    align-items: center;
-}
-
-.img1, .img2, .img3, .img4, .img5, .img6{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 65px 0;
-    border: 2px solid rgba(255, 0, 0, 0.8);
-    padding: 10px 0;
-    cursor: pointer;
-}
-
-.img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img6:hover{
-    transform: scale(1.1);
-    border: 2px solid #ff0000;
-}
-
-
-.img1 button, .img2 button, .img3 button, .img4 button, .img5 button, .img6 button{
-    background-color: #ff0000;
-    border-radius: 4px;
-    padding: 4px;
-    border: 1px solid;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.img1 button:hover, .img2 button:hover, .img3 button:hover, .img4 button:hover, .img5 button:hover, .img6 button:hover{
-    opacity: .8 ;
-}
-
-
-.imagens-mais-vendidos img{
-    height: 150px;
-
-}
-
-/* FINAL CSS DA SECTION */
-
 /* INICIO DO CSS PARA O FAQ */
 
 .faq-container{
@@ -298,11 +225,11 @@
     height: 50vh;
     width: 100%;
     background-color: #000000;
-    border-top: 2px solid rgb(255, 0, 0);
+    border-top: 2px solid rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: space-between;
     padding: 60px 30px;
-    border-bottom: 2px solid rgb(255, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
 }
 
 .faq-container ul{
@@ -354,4 +281,63 @@
 .pagamentos h3{
     color: #fff;
     border-bottom: 2px solid #ff0000;
+}
+
+
+/* SECTION INICIO */
+
+.section-container{
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 15px;
+    padding: 20px;
+}
+
+
+.recomendados-content{
+    border: 2px solid black;
+    width: 500px;
+    height: 210px;
+    position: relative;
+    top: 70px;
+    padding: 0px 15px;
+}
+
+.recomendados-content img{
+    width: 210px;
+    padding: 0px 10px;
+    height: 200px;
+}
+
+.paragrafh{
+    position: relative;
+    top: 80px;
+    font-size: 20px;
+    background-color: #ff0000;
+    height: 50px;
+}
+
+.paragrafh h2{
+    position: relative;
+    left: 20px;
+    color: #fff;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recomendados-content:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.recomendados-content .foto-bugada{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 20px;
+    left: 30px;
 }
