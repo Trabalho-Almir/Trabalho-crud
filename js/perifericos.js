@@ -8,12 +8,12 @@ const btnSalvar = document.querySelector('#btnSalvar')
 let itens
 let id
 
-function openModalT(edit = false, index = 0) {
-  modal.classList.add('activeT')
+function openModal(edit = false, index = 0) {
+  modal.classList.add('active')
 
   modal.onclick = e => {
     if (e.target.className.indexOf('modal-container') !== -1) {
-      modal.classList.remove('activeT')
+      modal.classList.remove('active')
     }
   }
 
@@ -76,7 +76,7 @@ btnSalvar.onclick = e => {
 
   setItensBD()
 
-  modal.classList.remove('activeT')
+  modal.classList.remove('active')
   loadItens()
   id = undefined
 }
